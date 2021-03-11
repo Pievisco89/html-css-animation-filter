@@ -73,19 +73,57 @@
 }
 
 .ex-7-img:hover{
-  filter: grayscale(1) brightness(1.2);
+  filter: grayscale(1) brightness(0.8);
+}
+
+.ex-8-img{
+  transition: 1.5s;
+}
+.ex-8-img:hover{
+  border-radius: 20px;
+  filter: grayscale(0.8) sepia(0.5);
 }
 
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
+  transition: 1.5s;
 }
+
+.ex-9-img:hover{
+  border-radius: 20px;
+  transform: scale(1.5);
+  filter: grayscale(0.8) saturate(1);
+}
+
 .ex-10-icon {
   font-size: 60px;
+  animation: caricamento 2s linear infinite;
 }
+
+@keyframes caricamento{
+  0%{
+    transform: rotate(1turn);
+  }
+}
+
 .ex-11-icon {
   font-size: 60px;
 }
+
+.ex-11-icon:hover{
+  animation: giro3-4 2s linear;
+}
+
+@keyframes giro3-4{
+  0%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+}
+
 .ex-12-button, .ex-13-button {
   position: relative;
   display: block;
